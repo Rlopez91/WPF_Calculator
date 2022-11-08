@@ -1,0 +1,343 @@
+﻿<Window x:Class="MidTermRicardoLopez.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MidTermRicardoLopez"
+        mc:Ignorable="d"
+        Title="Ricardo Calculator"
+        Height="450"
+        Width="600"
+        Name="rickwindow">
+    <Grid Margin="0,0,2,1">
+        <TextBox x:Name="display"
+                 HorizontalAlignment="Left"
+                 Height="58"
+                 Margin="10,10,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="539"
+                 FontSize="36"
+                 TextAlignment="Right">
+            <TextBox.Effect>
+                <DropShadowEffect />
+            </TextBox.Effect>
+        </TextBox>
+        <RadioButton x:Name="Standard"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="20,85,0,0"
+                     Content="Standard"
+                     FontSize="16"
+                     Click="Standard_Click">
+
+        </RadioButton>
+        <RadioButton x:Name="scientific"
+                     HorizontalAlignment="Left"
+                     VerticalAlignment="Top"
+                     Margin="122,85,0,0"
+                     Content="Scientific"
+                     FontSize="16"
+                     Click="scientific_Click">
+
+        </RadioButton>
+        <CheckBox x:Name="dmode"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Margin="232,85,0,0"
+                  Content="Dark Mode"
+                  FontSize="16"
+                  Click="dmode_Click">
+
+        </CheckBox>
+        <Button x:Name="seven"
+                Content="7"
+                HorizontalAlignment="Left"
+                Margin="10,121,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                IsCancel="True"
+                FontSize="28"
+                Background="White"
+                Click="seven_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+        <Button x:Name="eight"
+                Content="8"
+                HorizontalAlignment="Left"
+                Margin="122,121,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="eight_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="nine"
+                Content="9"
+                HorizontalAlignment="Left"
+                Margin="234,121,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="nine_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="four"
+                Content="4"
+                HorizontalAlignment="Left"
+                Margin="10,186,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="four_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="five"
+                Content="5"
+                HorizontalAlignment="Left"
+                Margin="123,186,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="five_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="six"
+                Content="6"
+                HorizontalAlignment="Left"
+                Margin="234,186,0,0"
+                VerticalAlignment="Top"
+                Width="82"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="six_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="one"
+                Content="1"
+                HorizontalAlignment="Left"
+                Margin="10,248,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="one_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="two"
+                Content="2"
+                HorizontalAlignment="Left"
+                Margin="122,248,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="two_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="three"
+                Content="3"
+                HorizontalAlignment="Left"
+                Margin="234,248,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="three_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+        <Button x:Name="zero"
+                Content="0"
+                HorizontalAlignment="Left"
+                Margin="10,313,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                RenderTransformOrigin="0.543,0.205"
+                FontSize="28"
+                Background="White"
+                Click="zero_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+        <Button x:Name="sign"
+                Content="+/-"
+                HorizontalAlignment="Left"
+                Margin="235,313,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                RenderTransformOrigin="0.543,0.205"
+                FontSize="28"
+                TextOptions.TextHintingMode="Animated"
+                Background="White"
+                Click="sign_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+        <Button x:Name="point"
+                Content="."
+                HorizontalAlignment="Left"
+                Margin="122,313,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                RenderTransformOrigin="0.543,0.205"
+                FontSize="28"
+                Background="White"
+                Click="point_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+        <Button x:Name="clear"
+                Content="CLEAR"
+                HorizontalAlignment="Left"
+                Margin="355,121,0,0"
+                VerticalAlignment="Top"
+                Width="194"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="clear_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="sum"
+                Content="+"
+                HorizontalAlignment="Left"
+                Margin="355,186,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="sum_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+
+        </Button>
+
+        <Button x:Name="substract"
+                Content="-"
+                HorizontalAlignment="Left"
+                Margin="468,186,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="substract_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+
+        </Button>
+
+        <Button x:Name="mult"
+                Content="*"
+                HorizontalAlignment="Left"
+                Margin="355,248,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="mult_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+
+        </Button>
+
+        <Button x:Name="divide"
+                Content="/"
+                HorizontalAlignment="Left"
+                Margin="468,248,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="divide_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+
+        </Button>
+
+        <Button x:Name="divideTen"
+                Content="1/X"
+                HorizontalAlignment="Left"
+                Margin="355,313,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="divideTen_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+
+        </Button>
+
+        <Button x:Name="result"
+                Content="="
+                HorizontalAlignment="Left"
+                Margin="468,313,0,0"
+                VerticalAlignment="Top"
+                Width="81"
+                Height="44"
+                FontSize="28"
+                Background="White"
+                Click="result_Click">
+            <Button.Effect>
+                <DropShadowEffect />
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
